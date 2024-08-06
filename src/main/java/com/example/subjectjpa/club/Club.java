@@ -8,7 +8,6 @@ import java.util.List;
 
 @Entity
 @Table(name = "tbl_club")
-@IdClass(CompositeKey.class)
 public class Club {
 
 
@@ -17,7 +16,8 @@ public class Club {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long clubId;
 
-    @Column(name = "CLUB_OWNER")
+    @ManyToOne
+    @JoinColumn(name = "CLUB_OWNER")
     private User clubOwner;  //구단주
 
     @Column(name = "CLUB_NAME")
@@ -43,11 +43,10 @@ public class Club {
     public Club() {
     }
 
-    public Club(Long clubId, User clubOwner,
+    public Club(User clubOwner,
                 String clubName, String clubIntroduction,
                 String clubCode, LocalDateTime erollDate,
                 PeakHours peakHours, List<PeakDays> peakDays) {
-        this.clubId = clubId;
         this.clubOwner = clubOwner;
         this.clubName = clubName;
         this.clubIntroduction = clubIntroduction;

@@ -8,7 +8,6 @@ import java.util.List;
 
 public class ClubRegistRequestDTO {
 
-    private Long clubId;
     private User clubOwner;
     private String clubName;
     private String clubIntroduction;
@@ -20,11 +19,10 @@ public class ClubRegistRequestDTO {
     public ClubRegistRequestDTO() {
     }
 
-    public ClubRegistRequestDTO(Long clubId, User clubOwner,
+    public ClubRegistRequestDTO(User clubOwner,
                                 String clubName, String clubIntroduction,
                                 String clubCode, LocalDateTime erollDate,
-                                PeakHours peakHours, List<PeakDays> peakDays) {
-        this.clubId = clubId;
+                                List<PeakDays> peakDays, PeakHours peakHours) {
         this.clubOwner = clubOwner;
         this.clubName = clubName;
         this.clubIntroduction = clubIntroduction;
@@ -32,14 +30,6 @@ public class ClubRegistRequestDTO {
         this.erollDate = erollDate;
         this.peakHours = peakHours;
         this.peakDays = peakDays;
-    }
-
-    public Long getClubId() {
-        return clubId;
-    }
-
-    public void setClubId(Long clubId) {
-        this.clubId = clubId;
     }
 
     public User getClubOwner() {
@@ -101,7 +91,6 @@ public class ClubRegistRequestDTO {
     @Override
     public String toString() {
         return "ClubRegistRequestDTO{" +
-                "clubId=" + clubId +
                 ", clubOwner=" + clubOwner +
                 ", clubName='" + clubName + '\'' +
                 ", clubIntroduction='" + clubIntroduction + '\'' +

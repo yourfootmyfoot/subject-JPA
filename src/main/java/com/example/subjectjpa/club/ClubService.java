@@ -18,7 +18,6 @@ public class ClubService {
     public void registClub(ClubRegistRequestDTO clubInfo) {
 
         Club newClub = new Club(
-                clubInfo.getClubId(),
                 clubInfo.getClubOwner(),
                 clubInfo.getClubName(),
                 clubInfo.getClubIntroduction(),
