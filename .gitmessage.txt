@@ -7,14 +7,14 @@
 # 본문(구체적인 내용)을 아랫줄에 작성
 
 ##################
-# feat: 새로운 기능 추가
-# fix: 버그 수정
-# docs: 문서 수정
-# style: 코드 포맷팅, 세미콜론 누락, 코드 변경이 없는 경우
-# refactor: 코드 리팩토링
-# test: 테스트 코드, 리팩토링 테스트 코드 추가
-# chore: 빌드 업무 수정, 패키지 매니저 수정, production code와 무관한 부분들 (.gitignore, build.gradle 같은)
-# comment: 주석 추가 및 변경
-# remove: 파일, 폴더 삭제
-# rename: 파일, 폴더명 수정
+# Feat: 새로운 기능 추가
+# Fix: 버그 수정
+# Docs: 문서 수정
+# Style: 코드 포맷팅, 세미콜론 누락, 코드 변경이 없는 경우
+# Refactor: 코드 리팩토링
+# Test: 테스트 코드, 리팩토링 테스트 코드 추가
+# Chore: 빌드 업무 수정, 패키지 매니저 수정, production code와 무관한 부분들 (.gitignore, build.gradle 같은)
+# Comment: 주석 추가 및 변경
+# Remove: 파일, 폴더 삭제
+# Rename: 파일, 폴더명 수정
 ###################
